@@ -1,5 +1,5 @@
 {
-    "name": "hichat",
+    "name": "Quarantinechat",
     "description": "a realtime chat web application",
     "version": "0.4.0",
     "main": "server.js",

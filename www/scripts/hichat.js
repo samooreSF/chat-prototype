@@ -1,12 +1,12 @@
 
 window.onload = function() {
-    var hichat = new HiChat();
-    hichat.init();
+    var Livechat = new LiveChat();
+    Livechat.init();
 };
-var HiChat = function() {
+var LiveChat = function() {
     this.socket = null;
 };
-HiChat.prototype = {
+LiveChat.prototype = {
     init: function() {
         var that = this;
         this.socket = io.connect();
@@ -15,7 +15,7 @@ HiChat.prototype = {
             document.getElementById('nickWrapper').style.display = 'block';
             document.getElementById('nicknameInput').focus();
         });
-        //If name is taken 
+        //If name is taken
         this.socket.on('nickExisted', function() {
             document.getElementById('info').textContent = '!nickname is taken, choose another pls';
         });
