@@ -125,7 +125,8 @@ LiveChat.prototype = {
     _initialEmoji: function() {
         var emojiContainer = document.getElementById('emojiWrapper'),
             docFragment = document.createDocumentFragment();
-        for (var i = 69; i > 0; i--) {
+            //change i's value for more incoming gifs
+        for (var i = 70; i > 0; i--) {
             var emojiItem = document.createElement('img');
             emojiItem.src = '../content/emoji/' + i + '.gif';
             emojiItem.title = i;
