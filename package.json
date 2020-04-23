@@ -2,6 +2,7 @@
     "name": "Quarantinechat",
     "description": "a realtime chat web application",
     "version": "0.4.0",
+    "start": "node server.js",
     "main": "server.js",
     "dependencies": {
         "express": "3.11.x",
